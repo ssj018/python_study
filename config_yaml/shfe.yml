@@ -1,0 +1,95 @@
+---
+preset_rules:
+    # possible value for volume
+    # -1 means no limitation.
+    # 0 can't open position
+    # postive value apply to openBuy and openSell
+    # note that keys for config are interpreted as regex
+
+    # maxOpen according to exchange
+    # psznF17, psznG17: 1500
+    # psruF17, psruK17: 1500
+    # pspbF17, pspbG17: 1000
+    # pshcK17: 2000
+    # psbu.* : 3200
+    # psrb.*: 7700
+    # pscu.*: 1200
+    all_prods: &all_prods
+        default: -1
+        rules:
+            - pattern: psznG17
+              value: 740
+            - pattern: pspbG17
+              value: 490
+            - pattern: pshcK17
+              value: 990
+            - pattern: psruK17
+              value: 740
+            - pattern: psrb.*
+              value: 3840
+            - pattern: pscu.*
+              value: 590
+            - pattern: psbu.*
+              value: 1590
+
+    R6_prods: &R6_prods
+        default: 0
+        rules:
+            - pattern: psruK17
+              value: 740
+            - pattern: psru.*
+              value: -1
+            - pattern: psznG17
+              value: 740
+            - pattern: pszn.*
+              value: -1
+            - pattern: pshcK17
+              value: 990
+            - pattern: psal.*
+              value: -1
+            - pattern: pssn.*
+              value: -1
+            - pattern: psni.*
+              value: -1
+            - pattern: pshc.*
+              value: -1
+
+day_accts:
+    - '108800272'
+    - '108800213'
+    - '108800297'
+    - '108800267'
+    - '108800278'
+    - '108800712'
+    - '108800702'
+    - '108800653'
+    - '108800139'
+    - '108800303'
+    - '108800263'
+    - '108850005'
+    - '108850025'
+    - '108800136'
+    - '108800739'
+    - '108800383'
+    - '108800172'
+
+night_accts: []
+
+max_openvol_rules:
+    '108800136': *all_prods
+    '108800139': *all_prods
+    '108850005': *all_prods
+    '108800303': *all_prods
+    '108800263': *all_prods
+    '108850025': *all_prods
+    '108800272': *all_prods
+    '108800267': *all_prods
+    '108800278': *R6_prods
+    '108800712': *all_prods
+    '108800297': *all_prods
+    '108800213': *all_prods
+    '108800739': *all_prods
+    '108800702': *all_prods
+    '108800653': *all_prods
+    '108800383': *all_prods
+    '108800172': *all_prods

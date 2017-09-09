@@ -1,0 +1,40 @@
+login_info: 
+  user: root
+  passwd: q1w2E#R$
+  ipmiuser: administrator
+  ipmipasswd: passw0rd
+  
+
+
+host: 
+  - 'zeus1'
+  - 'zeus2'
+  - 'zeus3'
+  - 'zeus4'
+  - 'furion1'
+  - 'furion2'
+  - 'furion3'
+  - 'furion4'
+  - 'furion5'
+  - 'furion6'
+  - 'furion7'
+  - 'furion8'
+  - 'furion9'
+  - 'furion10'
+  - 'furion11'
+  - 'furion12'
+  - 'furion13'
+  - 'furion14'
+  - 'furion15'
+  - 'furion16'
+  - 'hiatrademon'
+  - 'haitrademon2'
+  - 'utilserver'
+  - 'vhost'
+  - 'testlab1'
+  - 'testlab2'
+  - 'testlab3'
+  - 'testlab4'
+  - 'testlab5'
+  - 'testlab6'
+ 
