@@ -7,4 +7,6 @@ strings = 'edijhbh32498bvahjdsbfpqhreuilbnv'
 
 r = re.findall('[0-9]', strings)
 
-print r
+for i in r:
+    print "there are thoese numbers:"
+    print i
