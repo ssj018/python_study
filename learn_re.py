@@ -5,6 +5,6 @@ import re
 
 strings = 'edijhbh32498bvahjdsbfpqhreuilbnv'
 
-r = re.search('[0-9]', strings)
+r = re.findall('[0-9]', strings)
 
-print r.string
+print r
